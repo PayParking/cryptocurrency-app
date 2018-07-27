@@ -1,4 +1,4 @@
-# cryptocurrency-app
+# cryptocurrency-app (React.js)
 <ul>
   <li>Current Cryptocurrency Ranking</li>
   <li>API: https://coinmarketcap.com/api/</li>
