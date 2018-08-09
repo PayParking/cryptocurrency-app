@@ -8,10 +8,10 @@ const Table = (props) => (
                 <th>Rank</th>
                 <th>Name</th>
                 <th>Symbol</th>
-                <th>Price USD</th>
-                <th>Price BTC</th>
-                <th>Market Cap</th>
-                <th>% Change(1hr)</th>
+                <th className="text-right">Price USD</th>
+                <th className="text-right">Price BTC</th>
+                <th className="text-right">Market Cap</th>
+                <th className="text-right">% Change(1hr)</th>
                 <th>Last Updated</th>
             </tr>
         </thead>
