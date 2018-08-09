@@ -6,8 +6,11 @@
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "start": "node server/server.js",
+    "dev-server": "webpack-dev-server",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -20,6 +23,8 @@
     "bootstrap": "^4.1.3",
     "bootswatch": "^4.1.2",
     "css-loader": "0.28.4",
+    "express": "4.15.4",
+    "extract-text-webpack-plugin": "3.0.0",
     "live-server": "^1.2.0",
     "node-sass": "^4.9.0",
     "normalize.css": "7.0.0",
